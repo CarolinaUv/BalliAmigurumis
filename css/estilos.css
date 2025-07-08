@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&family=Playwrite+RO:wght@100..400&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap");
-.formulario-contacto form button, .boton-estilo, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+.formulario-contacto form button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -12,11 +12,11 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.formulario-contacto form button:hover, .boton-estilo:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+.formulario-contacto form button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
-.formulario-contacto form button, .boton-estilo, .productos .catalogo .tarjeta button, .boton, .hero .boton {
+.formulario-contacto form button, .productos .catalogo .tarjeta button, .boton, .hero .boton {
   display: inline-block;
   padding: 10px 20px;
   background-color: rgba(175, 240, 218, 0.8);
@@ -29,7 +29,7 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease;
 }
-.formulario-contacto form button:hover, .boton-estilo:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
+.formulario-contacto form button:hover, .productos .catalogo .tarjeta button:hover, .boton:hover {
   background-color: rgba(100, 200, 180, 0.9);
 }
 
@@ -365,10 +365,6 @@ footer .ubicacion iframe {
 .mediosdepago {
   margin: 4%;
   padding: 2px;
-}
-
-.boton-estilo:hover {
-  background-color: darkred;
 }
 
 .formulario-contacto {

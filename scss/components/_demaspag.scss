@@ -67,11 +67,6 @@
 .mediosdepago{
     margin: 4%;
     padding: 2px;
-    a{
-        .boton-estilo {
-            @extend %boton-estilo;
-        }
-    }
 }
 
 //*CONTACTO
