@@ -1,0 +1,143 @@
+.hero {
+    text-align: center;
+    height: 400px;
+    color: white;
+    background-image: url(../img/imagenlanas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .boton {
+        @extend %boton-estilo;
+    }
+    }
+
+    //*ACERCA DE MI
+    .acercademi-container {
+        background-color: bisque;
+        padding: 0px;
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 0px;
+            color: black;
+
+        }
+
+        .acercademi {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background-color: bisque;
+            padding: 20px;
+
+            .acercademi-texto {
+                flex: 1 1 60%;
+                padding: 10px;
+
+                p {
+                    margin: 10px 0;
+                    padding: 5px;
+                    font-weight: bold;
+                    font-size: 1.1rem;
+                }
+            }
+
+            .acercademi-imagen {
+                flex: 1 1 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 10px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                }
+            }
+        }
+    }
+
+    //*TIPS
+.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: bisque;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.divmateriales,
+.divlavado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 350px;
+  height: 350px;
+  border: solid black 2px;
+  background-color: beige;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.divmateriales img,
+.divlavado img {
+  width: 100%;
+  max-height: 100px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.divmateriales h3,
+.divlavado h3 {
+  text-align: center;
+  background-color: rgba(175, 240, 218, 0.555);
+  padding: 10px;
+}
+
+.divmateriales p,
+.divlavado p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.boton {
+  @extend %boton-estilo;
+}
+
+    //*USTEDES
+    .ustedes-container {
+        background-color: bisque;
+
+        #carouselExample {
+            max-width: 400px;
+            margin: 0 auto;
+
+            .carousel-inner {
+                width: 100%;
+
+                .carousel-item {
+                    width: 100%;
+
+                    img {
+                        width: 100% !important;
+                        height: auto;
+                        object-fit: contain;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,47 @@
+// _variables.scss
+
+// Fuentes
+$main-font: "Poetsen One", sans-serif;
+
+// Colores
+$highlight-bg: rgba(175, 240, 218, 0.555);
+
+// Tamaños de fuente
+$h1-size: 40px;
+$h2-size: 35px;
+$h3-size: 25px;
+$p-size: 20px;
+
+// Pesos de fuente
+$h1-weight: 300;
+$h2-weight: 200;
+$h3-weight: 200;
+$p-weight: 100;
+
+// Mixin
+@mixin heading-style($size, $weight) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $main-font;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+// Extend
+%boton-estilo {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(175, 240, 218, 0.8);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(100, 200, 180, 0.9);
+  }
+}

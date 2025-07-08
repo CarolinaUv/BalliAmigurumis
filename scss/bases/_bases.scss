@@ -1,0 +1,74 @@
+@import "./funcionalidades";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&family=Playwrite+RO:wght@100..400&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap');
+
+
+
+* {
+    font-family: "Poetsen One", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*----------GENERAL---------------*/
+
+header img {
+    width: 200px;
+    height: auto;
+    margin-top: 5px;
+}
+
+h1{
+    font-size: $h1-size;
+    font-weight: $h1-weight;
+    font-family: $main-font;
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: $highlight-bg;
+    display: flex;
+    justify-content: center;
+    @include heading-style($h1-size, $h1-weight);
+}
+h2 {
+    font-size: $h2-size;
+    font-weight: $h2-weight;
+    padding: 5px;
+    background-color: $highlight-bg;
+    display: flex;
+    justify-content: center;
+    @include heading-style($h2-size, $h2-weight);
+}
+
+h3 {
+    font-size: $h3-size;
+    font-weight: $h3-weight;
+    @include heading-style($h3-size, $h3-weight);
+}
+
+main h3 {
+    text-align: center;
+    background-color: $highlight-bg;  
+}
+
+p {
+    font-size: $p-size;
+    font-weight: $p-weight;
+    font-family: $main-font;
+    line-height: 1.6;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.whatsapp img {
+    width: 50px;
+    height: 50px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+

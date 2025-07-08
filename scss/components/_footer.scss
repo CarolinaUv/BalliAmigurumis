@@ -1,0 +1,39 @@
+footer{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    .informacion{
+        margin: 3px;
+        padding: 3px;
+    }
+        a{
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: black;
+        }
+    .seguinos{
+    margin: 3px;
+    padding: 3px;
+        a{
+            img{
+                width: 40px;
+                height: auto;
+                transition: 2s;
+            }
+            img:hover{
+                transform: translateX(250px);
+            }                   
+        }
+    }
+    .ubicacion{
+    margin: 3px;
+    padding: 3px;
+        iframe{
+            width: 150px;
+            height: 150px;
+        }
+    }
+}

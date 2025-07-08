@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+QLD+Beginner:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Permanent+Marker&family=Playwrite+RO:wght@100..400&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Underdog&display=swap');
+
+
+*{
+    font-family: "Poetsen One", sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*----------GENERAL---------------*/
+
+header img{
+    width: 300px;
+    height: auto;
+    margin-top: 5px;
+}
+h2{
+    font-size: 35px;
+    font-weight: 200;
+    padding: 5px;
+    background-color: rgba(175, 240, 218, 0.555);
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    font-size: 25px;
+    font-weight: 200;
+}
+main h3{     
+    text-align: center;
+    background-color: rgba(175, 240, 218, 0.555);
+}
+
+p{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+img{
+    width: 200px;
+    height: auto;
+}
+
+.whatsapp img{
+    width: 50px;
+    height: 50px;
+}
+.whatsapp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*----------HEADER------------*/
+header{
+    background-color: beige;
+    position: sticky;
+    top: 0; 
+    z-index: 9999;
+}
+
+.imgcontainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        ". img .";
+}
+
+.imgcontainer img{
+    grid-area: img;
+    justify-self: center;
+    max-width: 100% ;
+}
+
+.bg-body-tertiary{
+    background-color: rgba(175, 240, 218, 0.555) !important;
+}
+
+.nav-link{
+    color: black;    
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.navbar-nav a{
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*---------MAIN------------*/
+
+main{
+    background-color: bisque;
+}
+
+.hero{
+    text-align: center;
+    height: 500px;
+    color: white;
+    background-image: url(../img/imagenlanas.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.acercademi-container{
+    background-color: bisque;
+    padding: 0px;
+}
+
+.acercademi-container h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    color: black;
+}
+
+.acercademi{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 20px;
+}
+
+.acercademi-texto{
+    flex: 1 1 60%;
+    padding: 10px;
+}
+
+.acercademi-texto p{
+    margin: 10px 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.acercademi-imagen{
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acercademi-imagen img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/*--------TIPS-------*/
+
+.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background-color: bisque;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.divmateriales,
+.divlavado {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 400px;
+  height: 500px;
+  border: solid black 2px;
+  background-color: beige;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.divmateriales img,
+.divlavado img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+.divmateriales h3,
+.divlavado h3 {
+  text-align: center;
+  background-color: rgba(175, 240, 218, 0.555);
+  padding: 10px;
+}
+
+.divmateriales p,
+.divlavado p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(175, 240, 218, 0.8);
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  margin: 10px auto 0;
+}
+
+.boton:hover {
+  background-color: rgba(100, 200, 180, 0.9);
+}
+/*--------USTEDES--------*/
+
+.carousel{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-inner img, .carousel-item img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 10px;
+}
+
+#carouselExample {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.carousel-inner {
+    width: 100%;
+}
+/*----------FOOTER----------*/
+footer{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.informacion{
+    margin: 3px;
+    padding: 3px;
+}
+
+.informacion a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+
+.seguinos{
+    margin: 3px;
+    padding: 3px;
+}
+
+.ubicacion{
+    margin: 3px;
+    padding: 3px;
+}
+footer img{
+    width: 40px;
+    height: auto;
+}
+
+footer iframe{
+    width: 150px;
+    height: 150px;
+}
+
+/*-----PRODUCTOS-----------*/
+
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: rgba(255, 228, 196, 0.4);
+    padding: 20px;
+}
+
+.tarjeta{
+    width: 300px;
+    border: none;
+    border-radius: 8px;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.tarjeta header{
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.tarjeta img{
+    width: 80%;
+    max-height: 100%;
+    object-fit: contain;
+    margin: 15px 0;
+}
+
+.tarjeta button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(175, 240, 218, 0.8);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.tarjeta button:hover{
+    background-color: rgba(100, 200, 180, 0.9);
+}
+
+/*------CONTACTO-------*/
+
+.formulario-contacto {
+    display: grid;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 90%;
+    background-color: beige;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+h1 {
+    font-size: 48px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(175, 240, 218, 0.8);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(100, 200, 180, 0.9);
+}
+
+/*-----PATRONES Y CURSOS-----*/
+.video-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+}
+@media screen and (max-width: 507px) {
+.tips{
+    flex-direction: column;
+}
+.tips .divmateriales, .divlavado{
+    width: 300px;
+    height: auto;
+    margin: 5px;
+}
+}
+
+@media screen and (max-width: 499px) {
+.carousel-inner img, .carousel-item img {
+    padding: 5px;
+}
+}
+
+@media screen and (max-width: 457px) {   
+.informacion{
+    margin: 1px;
+    padding: 1px;
+}
+
+.informacion h3, .seguinos h3, .ubicacion h3{
+    font-size: 15px;
+}
+
+.informacion a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
+.seguinos{
+    margin: 1px;
+    padding: 1px;
+}
+
+.ubicacion{
+    margin: 1px;
+    padding: 1px;
+}
+footer img{
+    width: 35px;
+    height: auto;
+}
+
+footer iframe{
+    width: 100px;
+    height: 100px;
+}
+}
+
+@media screen and (max-width: 670px) {
+.catalogo{
+    display: flex;
+    flex-direction: column;
+}
+}
+
